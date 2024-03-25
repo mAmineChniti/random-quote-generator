@@ -3,6 +3,6 @@ import { TweetBox } from '../../../components/tweet-box/tweet-box';
 
 export default createBoard({
     name: 'TweetBox',
-    Board: () => <TweetBox />,
+    Board: () => <TweetBox text="Tryout Text"/>,
     isSnippet: true,
 });
