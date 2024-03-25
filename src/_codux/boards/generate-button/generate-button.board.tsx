@@ -8,5 +8,5 @@ export default createBoard({
 });
 
 function handleClick(): Promise<void> {
-throw new Error('Function not implemented.');
+  throw new Error('Function not implemented.');
 }

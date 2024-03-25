@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     watch: {
-      usePolling: true
-    }
+      usePolling: true,
+    },
   },
-  exclude: ['src/_codux/**']
+  exclude: ['src/_codux/**'],
 });
