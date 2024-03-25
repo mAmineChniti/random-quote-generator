@@ -9,5 +9,5 @@ export default defineConfig({
       usePolling: true
     }
   },
-  exclude: ['src/_codux']
+  exclude: ['src/_codux/**']
 });
