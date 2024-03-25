@@ -1,7 +1,7 @@
 import React from 'react';
 
 export interface GenerateButtonProps {
-  onClick: () => Promise<void>;
+  onClick: () => Promise<void> | null;
 }
 
 export const GenerateButton: React.FC<GenerateButtonProps> = ({ onClick }) => {

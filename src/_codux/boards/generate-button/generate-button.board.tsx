@@ -3,6 +3,10 @@ import { GenerateButton } from '../../../components/generate-button/generate-but
 
 export default createBoard({
   name: 'GenerateButton',
-  Board: () => <GenerateButton onClick={onclick} />,
+  Board: () => <GenerateButton onClick={handleClick as () => Promise<void>} />,
   isSnippet: true,
 });
+
+function handleClick(): Promise<void> {
+throw new Error('Function not implemented.');
+}
