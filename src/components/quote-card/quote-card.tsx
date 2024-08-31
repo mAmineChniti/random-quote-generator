@@ -42,7 +42,7 @@ export const QuoteCard: React.FC = () => {
   return (
     <div
       id="quote-box"
-      className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-90 h-50 bg-blue-400 flex flex-col justify-center items-center text-white rounded-lg shadow-lg p-4"
+      className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-90 h-50 bg-blue-400 flex flex-col justify-center items-center text-white rounded-lg shadow-lg p-4 min-w-96"
       role="dialog"
       aria-labelledby="quote-text"
       aria-describedby="quote-author"
