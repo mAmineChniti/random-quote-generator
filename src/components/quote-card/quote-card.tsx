@@ -10,18 +10,21 @@ interface QuoteData {
 
 const fetchQuote = async (): Promise<QuoteData> => {
   const url = 'https://famous-quotes4.p.rapidapi.com/random?category=all&count=1';
+  const apiKey = import.meta.env.VITE_RAPID_API_KEY as string;
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
+      'X-RapidAPI-Key': apiKey,
       'X-RapidAPI-Host': 'famous-quotes4.p.rapidapi.com',
     },
   };
   const response = await fetch(url, options);
+
   if (!response.ok) {
     throw new Error('Failed to fetch quote');
   }
-  const data = await response.json();
+
+  const data = (await response.json()) as QuoteData[];
   return data[0];
 };
 
