@@ -19,7 +19,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "exclude": ["src/_codux/**"],
   "references": [
     {
       "path": "./tsconfig.node.json"
