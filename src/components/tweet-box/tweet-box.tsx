@@ -16,7 +16,7 @@ export const TweetBox: React.FC<TweetBoxProps> = ({ text }) => {
       onClick={openTweetPopup}
       href="https://twitter.com/intent/tweet?text="
       className="rounded-lg inline-block w-8 h-8 overflow-hidden bg-white"
-      target="_blank"
+      target="_blank" rel="noreferrer"
     >
       <svg
         className="w-full h-full"
